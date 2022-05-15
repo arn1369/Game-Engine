@@ -4,13 +4,13 @@ def dot_product(vect1, vect2):
     return vect1.x*vect2.x + vect1.y*vect2.y
 
 def angle(vect1, vect2):
-    return acos(DotProduct(vect1, vect2)/(vect1.magnitude*vect2.magnitude))*180/pi
+    return acos(dot_product(vect1, vect2)/(vect1.magnitude*vect2.magnitude))*180/pi
 
 def random_vector():
     return Vector(random.random()*2.0 - 1.0, random.random()*2.0 - 1.0)
 
 def random_direction():
-    return normalize(RandomVector())
+    return normalize(random_vector())
 
 def copy(vect):
     return Vector(vect.x, vect.y)

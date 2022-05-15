@@ -1,7 +1,6 @@
 import pygame
 import UI
 
-
 SCREEN_WIDTH, SCREEN_HEIGHT = 1080, 720
 
 pygame.init()
@@ -56,7 +55,6 @@ while running:
                 running = False
         elif event.type == pygame.MOUSEBUTTONDOWN:
             button1.click(event, but)
-            pass
 
     screen.fill(background)
     button1.show(screen)
